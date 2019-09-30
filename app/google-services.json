@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "608778334229",
+    "firebase_url": "https://contests-c2e1f.firebaseio.com",
+    "project_id": "contests-c2e1f",
+    "storage_bucket": "contests-c2e1f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608778334229:android:2be65b1366675b44fe1e1c",
+        "android_client_info": {
+          "package_name": "com.noobsever.codingcontests"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "608778334229-mucq8jfpeda3qd3pnbtom59bim724jga.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.noobsever.codingcontests",
+            "certificate_hash": "4b93be68422ff97a3b142cbc1e975aa38aa35dd0"
+          }
+        },
+        {
+          "client_id": "608778334229-m4khtu0tnt1bqnhu0n6i2nkm9dlgqgks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcP5vj4Fu9yipXY-im_LsEdl1hp7h4zPg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "608778334229-m4khtu0tnt1bqnhu0n6i2nkm9dlgqgks.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

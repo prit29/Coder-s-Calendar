@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_rect_back"
+            android:clickable="true"
+            android:focusable="true"
+            app:tabGravity="center"
+            app:tabIndicatorAnimationDuration="200"
+            app:tabIndicatorColor="#FFFFFF"
+            app:tabMode="scrollable"
+            android:backgroundTint="@color/colorPrimaryDark"
+            app:tabPaddingEnd="15dp"
+            app:tabPaddingStart="15dp"
+            app:tabRippleColor="#FFFFFF"
+            app:tabSelectedTextColor="#FFFFFF"
+            app:tabTextColor="#CECECE"
+            tools:ignore="MissingConstraints">
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swiperefresh"
+            android:layout_below="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="661dp"
+            />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+        <com.aseem.versatileprogressbar.ProgBar
+            android:id="@+id/myProgBar"
+            android:background="#CCFFFFFF"
+            android:layout_below="@id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="10dp"
+            app:barType="@drawable/jelly_belly"
+            app:text="Updating Database..."
+            app:textSize="10sp"
+            app:enlarge="3"
+            app:androidtextColor="@color/colorPrimary"/>
+
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:layout_below="@+id/tabLayout"
+            android:id="@+id/shimmer_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            app:shimmer_duration="800"
+            >
+
+                <!-- Adding 7 rows of placeholders -->
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+                        <include layout="@layout/data_placeholader_layout" />
+                        <include layout="@layout/data_placeholader_layout" />
+                        <include layout="@layout/data_placeholader_layout" />
+
+                </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+</RelativeLayout>
+

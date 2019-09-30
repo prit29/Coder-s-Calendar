@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+       app:cardBackgroundColor="#B1B1B1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/cardln"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <View
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:background="@color/background"
+            android:layout_width="200dp"
+            android:layout_height="50dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginHorizontal="30sp"
+            android:background="@color/background"
+            />
+
+        <View
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:background="@color/background"
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/background"
+            android:layout_height="1dp"
+            >
+
+        </View>
+
+
+        <View
+            android:background="@color/background"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"></View>
+
+
+        <View
+            android:background="@color/background"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            ></View>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_gravity="center"
+                android:background="@color/background"
+                android:layout_margin="10dp"
+                android:layout_width="20sp"
+                android:layout_height="20sp" />
+
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/background"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="30dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings_activity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/toolbar"
+        tools:ignore="MissingConstraints">
+
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/subscribe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Choose Sites"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <LinearLayout
+        android:layout_below="@+id/subscribe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/lnir"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subscribe"
+        app:layout_constraintVertical_bias="0.0">
+
+        <CheckBox
+            android:id="@+id/check_codeforces"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onCheckboxClicked"
+            android:text="Codeforces" />
+
+        <CheckBox
+            android:id="@+id/check_codechef"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onCheckboxClicked"
+            android:text="Codechef" />
+
+        <CheckBox
+            android:id="@+id/check_hackerrank"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onCheckboxClicked"
+            android:text="HackerRank" />
+
+        <CheckBox
+            android:id="@+id/check_hackerearth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:checked="true"
+            android:onClick="onCheckboxClicked"
+            android:text="HackerEarth" />
+
+        <CheckBox
+            android:id="@+id/check_topcoder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:checked="true"
+            android:onClick="onCheckboxClicked"
+            android:text="TopCoder" />
+
+        <CheckBox
+            android:id="@+id/check_spoj"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onCheckboxClicked"
+            android:text="SPOJ" />
+
+        <CheckBox
+            android:id="@+id/check_atcoder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:checked="true"
+            android:onClick="onCheckboxClicked"
+            android:text="AtCoder" />
+    </LinearLayout>
+    <View
+        android:id="@+id/v2"
+        android:layout_below="@id/lnir"
+        android:layout_width="match_parent"
+        android:background="#000"
+        android:layout_height="2sp"></View>
+
+    <CheckBox
+        android:id="@+id/hourformat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v2"
+        android:onClick="onCheckboxClicked"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Show Time in 12-hour Format"
+        android:layout_margin="10dp" />
+
+    <View
+        android:id="@+id/v3"
+        android:layout_below="@id/hourformat"
+        android:layout_width="match_parent"
+        android:background="#000"
+        android:layout_height="2sp"></View>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/radiohead"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@+id/hourformat"
+        android:text="Get Contests of"
+        />
+
+    <RadioGroup
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/radiogrp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/radiohead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_flat_selector"
+            android:button="@android:color/transparent"
+            android:checked="true"
+            android:onClick="onRadioButtonClicked"
+            android:paddingLeft="16dp"
+            android:paddingTop="3dp"
+            android:textSize="15sp"
+            android:paddingRight="16dp"
+            android:paddingBottom="3dp"
+            android:text="1 Week"
+            android:textColor="@color/radio_flat_text_selector" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_width="100dp"
+            android:onClick="onRadioButtonClicked"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_flat_selector"
+            android:button="@android:color/transparent"
+            android:paddingLeft="16dp"
+            android:paddingTop="3dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="3dp"
+            android:text="2 Weeks"
+            android:textColor="@color/radio_flat_text_selector" />
+        <RadioButton
+            android:id="@+id/radio2"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:onClick="onRadioButtonClicked"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_flat_selector"
+            android:button="@android:color/transparent"
+            android:paddingLeft="16dp"
+            android:paddingTop="3dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="3dp"
+            android:text="1 month"
+            android:textColor="@color/radio_flat_text_selector" />
+    </RadioGroup>
+    <View
+        android:id="@+id/v4"
+        android:layout_below="@id/radiogrp"
+        android:layout_width="match_parent"
+        android:background="#000"
+        android:layout_height="2sp"></View>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-5901018826330107/2630994045">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

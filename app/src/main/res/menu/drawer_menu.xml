@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_reset"
+            android:icon="@drawable/reset"
+            android:title="Reset" />
+        <item
+            android:id="@+id/nav_changelayout"
+            android:icon="@drawable/layoutchange"
+            android:title="Change Layout" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/help_icon"
+            android:title="Help" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings_icon"
+            android:title="Settings" />
+
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/notification_icon"
+            android:title="Notifications" />
+
+        <item
+            android:id="@+id/nav_signout"
+            android:icon="@drawable/sign_out_icon"
+            android:title="Signout" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share_icon"
+                android:title="Share us" />
+
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/rate_icon"
+                android:title="Rate us" />
+            <item
+                android:id="@+id/nav_suggest"
+                android:icon="@drawable/suggest_icon"
+                android:title="Suggest us" />
+
+            <item
+                android:id="@+id/nav_devs"
+                android:icon="@drawable/developers_icon"
+                android:title="Developers" />
+        </menu>
+    </item>
+
+</menu>

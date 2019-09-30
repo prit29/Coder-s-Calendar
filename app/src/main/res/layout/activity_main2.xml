@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/const1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.gauravk.bubblenavigation.BubbleNavigationConstraintView
+            android:id="@+id/floating_top_bar_navigation"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:padding="4dp"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            app:bnc_mode="packed"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp">
+
+
+
+            <com.gauravk.bubblenavigation.BubbleToggleView
+                android:id="@+id/l_item_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bt_colorActive="@color/blue_active"
+                app:bt_active="true"
+                app:bt_colorInactive="@color/blue_inactive"
+                app:bt_icon="@drawable/live_contest_icon"
+                app:bt_shape="@drawable/rounded_rect"
+                app:bt_shapeColor="@color/blue_bg_light"
+                app:bt_title=" Live " />
+
+
+            <com.gauravk.bubblenavigation.BubbleToggleView
+                android:id="@+id/l_item_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bt_colorActive="@color/red_active"
+                app:bt_colorInactive="@color/red_inactive"
+                app:bt_icon="@drawable/long_contest_icon"
+                app:bt_shape="@drawable/rounded_rect"
+                app:bt_shapeColor="@color/red_bg_light"
+                app:bt_title=" Long " />
+
+
+
+            <com.gauravk.bubblenavigation.BubbleToggleView
+                android:id="@+id/l_item_profile_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bt_colorActive="@color/green_active"
+                app:bt_colorInactive="@color/green_inactive"
+                app:bt_icon="@drawable/short_contest_icon"
+                app:bt_shape="@drawable/rounded_rect"
+                app:bt_shapeColor="@color/blue_grey_bg_light"
+                app:bt_title=" Short " />
+
+        </com.gauravk.bubblenavigation.BubbleNavigationConstraintView></androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefresh"
+        android:layout_below="@+id/const1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        /></androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <com.aseem.versatileprogressbar.ProgBar
+        android:id="@+id/myProgBar"
+        android:layout_below="@+id/const1"
+        android:background="#CCFFFFFF"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        app:barType="@drawable/jelly_belly"
+        app:text="Updating Database..."
+        app:textSize="10sp"
+        app:enlarge="3"
+        app:androidtextColor="@color/colorPrimary"/>
+
+
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_below="@+id/const1"
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        app:shimmer_duration="800"
+        >
+
+        <!-- Adding 7 rows of placeholders -->
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+            <include layout="@layout/data_placeholader_layout" />
+            <include layout="@layout/data_placeholader_layout" />
+            <include layout="@layout/data_placeholader_layout" />
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+
+</RelativeLayout>

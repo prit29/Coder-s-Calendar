@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/interchange"
+        android:icon="@drawable/layoutchange"
+        android:title="Chenge Layout"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/refresh"
+        android:icon="@drawable/reset"
+        android:title="Refresh"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        app:showAsAction="never"
+        ></item>
+
+    <item
+        android:id="@+id/about"
+        android:title="About"
+        app:showAsAction="never"
+        ></item>
+
+    <item
+        android:id="@+id/logout"
+        android:title="LogOut"
+        app:showAsAction="never"
+        ></item>
+
+</menu>

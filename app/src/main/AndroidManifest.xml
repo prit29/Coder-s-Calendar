@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.noobsever.codingcontests">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/appicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.noobsever.codingcontests.HelpActivity"></activity>
+        <activity
+            android:name="com.noobsever.codingcontests.LogIn.MainLogin"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.noobsever.codingcontests.DevelopersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.noobsever.codingcontests.SuggestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.noobsever.codingcontests.Notifications.NotifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.noobsever.codingcontests.Settings_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.noobsever.codingcontests.Main2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.noobsever.codingcontests.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <receiver android:name="com.noobsever.codingcontests.Notifications.AlertReceiver" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-5901018826330107~2143575749" />
+    </application>
+
+</manifest>

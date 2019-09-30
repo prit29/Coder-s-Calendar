@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Coder\'s Calendar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="notification">Notify</string>
+    <string name="likes">Favs</string>
+    <string name="happy">Happy</string>
+    <string name="room">Room</string>
+    <string name="restaurant">Food</string>
+    <string name="shop">Shop</string>
+    <string name="photos">Pics</string>
+    <string name="call">Call</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">CODER\'S CALENDAR</string>
+    <string name="nav_header_subtitle">Alone18 - TeQ Prit</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+
+
+    <string name="head">We have developed this app only for spreading awareness towards competitive coding.</string>
+    <string name="head1">You can update contest database any time using this feature.</string>
+    <string name="head2">Using this feature you can decide yourself that contests of which platforms you want to show.</string>
+    <string name="head3">There is Two types of reminders we have set. 1)App will send you the notification. 2) You can manually set reminder.</string>
+    <string name="head4">You can set for how many days of contests you want to get.</string>
+    <string name="head5">You can redirect to contest link by clicking contest logo in template. Long press on card to share the contest.</string>
+    <string name="head6">You can change layout of contest lists.</string>
+
+
+</resources>

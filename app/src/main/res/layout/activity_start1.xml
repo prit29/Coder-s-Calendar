@@ -7,8 +7,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:openDrawer="start"
-    android:background="#A3A3A3">
+    android:background="@drawable/nav_headback"
+    tools:openDrawer="start">
 
 
         <include
@@ -21,7 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="start"
-            android:background="#FFFFFF"
+            android:background="#00FFFFFF"
             android:fitsSystemWindows="true"
             app:headerLayout="@layout/nav_header"
             app:menu="@menu/drawer_menu" />

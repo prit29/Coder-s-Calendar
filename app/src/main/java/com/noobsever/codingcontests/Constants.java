@@ -2,7 +2,7 @@ package com.noobsever.codingcontests;
 
 public class Constants {
 
-
+//added comments
     public static String TYPE="TYPE";
     public static String CURRENT="CURRENT";
     public static String TABS ="TABS";
